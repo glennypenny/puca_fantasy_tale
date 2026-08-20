@@ -13,7 +13,7 @@ An AI-driven interactive storytelling experience. A dark fantasy adventure where
 
 \- Windows 10 or 11
 
-\- An NVIDIA GPU with at least 8 GB of VRAM (recommended). CPU-only is supported but very slow.
+\- An NVIDIA GPU with at least 8 GB of VRAM (recommended).
 
 \- About 10 GB of free disk space (for the AI models)
 
@@ -48,8 +48,10 @@ An AI-driven interactive storytelling experience. A dark fantasy adventure where
 
 
 If the batch script doesn't work, you will have to pip install all of the modules in the my\_version\_of\_kawa.py one by one:
+
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 pip install diffusers transformers accelerate peft Pillow requests pywin32 pygame
+
 ollama pull mistral
 
 Then launch with:
@@ -59,10 +61,10 @@ python my_version_of_kawa.py
 
 ## Troubleshooting
 
-- **"Ollama not found"** – make sure you installed it and it's running (`ollama serve`).
-- **Image generation very slow** – you're running on CPU. If you have an NVIDIA GPU, reinstall PyTorch with CUDA support (the first `pip install` line above).
+- **"Ollama not found"** – make sure you installed it and it's running.
+- **Image generation very slow** – If you have an NVIDIA GPU, reinstall PyTorch with CUDA support (the first `pip install` line above).
 - **No music or voice** – ensure `pygame` and `pywin32` are installed (`pip install pygame pywin32`).
-- **Out of memory error** – reduce the image size in the code, or use CPU mode by removing `.to("cuda")` from the script.
+- **Out of memory error** – reduce the image size in the code of the script.
 
 ## Credits
 

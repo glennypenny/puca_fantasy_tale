@@ -1,0 +1,20 @@
+# Puca v1 — Windows 11, Python 3.x, NVIDIA GPU (8 GB+ VRAM)
+#
+# Versions are deliberately unpinned: v1 was built against whatever was current
+# when it was written. To pin them, run the freeze command in the README from
+# your working install.
+#
+# CUDA builds of torch come from PyTorch's own index, not PyPI:
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch
+torchvision
+torchaudio
+diffusers
+transformers
+accelerate
+peft
+Pillow
+requests
+pywin32
+pygame

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 \# Puca – A Dark Fantasy Interactive Story
 
 

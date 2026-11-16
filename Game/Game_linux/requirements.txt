@@ -1,0 +1,14 @@
+# Puca v2 — tested on Pop!_OS 24.04, Python 3.12.3, CUDA 13.0
+# Install PyTorch first:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+
+diffusers==0.40.0
+transformers==5.18.0
+accelerate==1.15.0
+peft==0.21.2
+safetensors==0.8.0
+huggingface_hub==1.33.0
+Pillow==12.3.0
+requests==2.34.2
+pygame==2.6.1
+pyttsx3==2.99
